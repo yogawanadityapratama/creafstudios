@@ -1,0 +1,29 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 24px 24px 24px 24px;
+    border: $border;
+    border-radius: 30px 30px 30px 30px;
+    .left {
+        width: 45%;
+        img {
+            width: 100%;
+        }
+        border-right: $border;
+        padding-right: 6px;
+    }
+    .right {
+        width: 50%;
+        .button {
+            margin-top: 24px;
+            a {
+                padding: 12px;
+                border: $border;
+                text-decoration: none;
+                color: $tertiary-color;
+                border-radius: 100px;
+            }
+        }
+    }
+}

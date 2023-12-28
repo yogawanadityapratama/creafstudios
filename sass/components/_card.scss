@@ -1,0 +1,91 @@
+.hello {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    .hello-scroll {
+        display: flex;
+        white-space: nowrap;
+        animation: scrollAnimationCard 30s linear infinite;
+        .hello-content {
+            margin-right: 12px;
+            padding: 12px 32px 12px 32px;
+            border: $border;
+            border-radius: 100px;
+            animation: scroll 10s linear infinite;
+        }
+    } 
+}
+
+@keyframes scrollAnimationCard {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+iframe {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: $border;
+  border-radius: 24px;
+  background-color: $primary-color;
+  margin-top: 12px;
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      width: 49%;
+      .left-content {
+        padding: 12px;
+        border: $border;
+        border-radius: 16px;
+        margin-bottom: 12px;  
+      }
+      img {
+        width: 100%;
+        border-radius: 12px;
+      }
+    }
+    .right {
+      width: 49%;
+      .right-content {
+        padding: 12px;
+        border: $border;
+        border-radius: 16px;
+        margin-bottom: 12px;
+      }
+      .height {
+        height: 100px;
+        overflow: scroll;
+      }
+    }
+  }
+}
+
+.service {
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    .service-content-left {
+      width: 50%;
+      padding: 24px;
+      border: $border;
+      border-radius: 20px 0 0 24px;
+    }
+    .service-content-right {
+      width: 50%;
+      padding: 24px;
+      border: $border;
+      border-radius: 0 24px 24px 0;
+    }
+  }
+}

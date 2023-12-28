@@ -1,0 +1,32 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    .accordion-content {
+        border-bottom: $border;
+        margin-bottom: 32px;
+        .accordion-content-question {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            .icon {
+                transition: transform 0.5s ease-in;
+            }
+        }
+        .accordion-content-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.accordion-content.active .accordion-content-answer {
+    max-height: 300px;
+}
+.accordion-content.active .icon {
+    transform: rotate(180deg);
+}

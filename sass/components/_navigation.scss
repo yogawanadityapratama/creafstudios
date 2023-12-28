@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 12px;
+    left: 24px;
+    right: 24px;
+    ul {
+        display: flex;
+        padding: 16px;
+        border: $border;
+        background-color: $secondary-color;
+        border-radius: 100px;
+        li {
+            list-style: none;
+            a {
+                padding: 12px;
+                text-decoration: none;
+                color: $tertiary-color;
+            }
+        }
+    }
+}
